@@ -5,7 +5,7 @@ A Program for reading a dat file into a postgresql database
 """
 
 db_username = "postgres"
-db_password = "K3n^00d"
+db_password = ""
 db_hostname = "wdb-serv"
 db_database = "arcade"
 db_port     = 5432
@@ -47,20 +47,20 @@ tag_list = ["<path>", "<name>", "<sortname>", "<image>", "<video>",
 #tag_list_number = ["<rating>", "<releasedate>", "<favorite>",
 #                   "<hidden>", "<kidgame>", "<playcount>",
 #                   "<lastplayed>"]
-row_numbers = ["game_id", "rating", "playcount"]
-row_text    = ["path", "name", "sortname", "image", "video", "marquee",
-               "thumbnail", "releasedate", "developer", "publisher",
-               "genre", "players", "region", "lastplayed"]
+#row_numbers = ["game_id", "rating", "playcount"]
+#row_text    = ["path", "name", "sortname", "image", "video", "marquee",
+#               "thumbnail", "releasedate", "developer", "publisher",
+#               "genre", "players", "region", "lastplayed"]
 row_boolean = ["favorite", "hidden", "kidgame"]
 insert_rows = ''
 insert_values = ''
 system_id = 5
 gamelist = open("gamelist.xml","r")
-sqlfile = open("sql.txt","w")
+#sqlfile = open("sql.txt","w")
 game_info = {}
 
-insert_rows = "INSERT INTO gamelist_test (system_id"
-insert_values = "VALUES (%d, ", (system_id)
+#insert_rows = "INSERT INTO gamelist_test (system_id"
+#insert_values = "VALUES (%d, ", (system_id)
 
 
 for line in gamelist:
