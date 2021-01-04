@@ -5,7 +5,7 @@ A Program for reading a dat file into a postgresql database
 """
 
 db_username = "postgres"
-db_password = "K3n^00d"
+db_password = "****"
 db_hostname = "wdb-serv"
 db_database = "arcade"
 db_port     = 5432
